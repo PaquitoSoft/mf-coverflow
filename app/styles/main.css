@@ -1,8 +1,15 @@
+/*
 body {
     background: #fafafa;
 }
+*/
 
-.container-narrow {
-	margin: 0 auto;
-	max-width: 700px;
+.header {
+	width: 80%;
+	margin: 0 0 5% 10%;
+	font-family: 'Arial';
+}
+
+#movies-coverflow {
+	visibility: hidden;
 }

@@ -1,3 +1,45 @@
-.mf-coverflow li {
-	text-decoration: none;
+.mf-coverflow {
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	min-height: 200px;
+	visibility: hidden;
+}
+
+.mf-coverflow .hidden {
+	display: none;
+}
+
+.mf-coverflow .mf-list {
+	list-style: none;
+}
+
+.mf-coverflow .mf-cover {
+	border-radius: 5px;
+	box-shadow: 0 0 1em #888888;
+	position: absolute;
+	top: 0;
+}
+
+.mf-coverflow .active-cover .mf-cover {
+	left: 25%;
+	height: 175px;
+}
+
+.mf-coverflow .left-cover .mf-cover {
+	-webkit-transform: perspective( 600px ) rotateY( 45deg );
+	width: 45%;
+}
+
+.mf-coverflow .left-cover .mf-cover {
+	left: 0;
+	opacity: 0.8;
+}
+
+.mf-coverflow .right-cover .mf-cover {
+	right: 0;
+	-webkit-transform: perspective( 600px ) rotateY( -45deg );
+	width: 45%;
+	z-index: -10;
+	opacity: 0.8;
 }

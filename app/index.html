@@ -6,48 +6,58 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Marfeel CoverShow demo</title>
-        <meta name="description" content="Marfeel CoverShow demo">
+        <title>Marfeel Coverflow demo</title>
+        <meta name="description" content="Marfeel Coverflow demo">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="components/bootstrap.css/css/bootstrap.min.css">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/mf-coverflow.css">
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
     </head>
     <body>
         
-    	<div class="container-narrow">
+    	<section class="header">
+			<h3>Marfeel Coverflow</h3>
+    	</section>
 
-      <div class="masthead">    
-        <h3 class="muted">Marfeel CoverShow</h3>
-      </div>
 
-      <hr>
+    	<section class="content">
+    		<!--
+			<div id="movies-coverflow" class="mf-coverflow">
+				<ul class="mf-list">
+					<li class="mf-item left-cover"><img class="mf-cover" src="images/422.jpg"></img></li>
+					<li class="mf-item active"><img class="mf-cover" src="images/423.jpg"></img></li>
+					<li class="mf-item right-cover"><img class="mf-cover" src="images/426.jpg"></img></li>
+					<li class="mf-item"><img class="mf-cover" src="images/427.jpg"></img></li>
+					<li class="mf-item"><img class="mf-cover" src="images/428.jpg"></img></li>
+				</ul>
+			</div>
+			-->
+			<div id="movies-coverflow">
+				<ul>
+					<li><img src="images/422.jpg"></img></li>
+					<li><img src="images/423.jpg"></img></li>
+					<li><img src="images/426.jpg"></img></li>
+					<li><img src="images/427.jpg"></img></li>
+					<li><img src="images/428.jpg"></img></li>
+				</ul>
+			</div>
 
-      <div class="jumbotron">
-        <ul class="mf-coverflow">
-			<li><img src="images/422.jpg"></img></li>
-			<li><img src="images/423.jpg"></img></li>
-			<li><img src="images/426.jpg"></img></li>
-			<li><img src="images/427.jpg"></img></li>
-			<li><img src="images/428.jpg"></img></li>
-		</ul>
-      </div>
+			<div class="controls">
+				<a href="#" class="left-arrow">
+					<img src="images/arrow_left.png" width="50" height="50">
+				</a>
+				<a href="#" class="right-arrow">
+					<img src="images/arrow_right.png" width="50" height="50">
+				</a>
 
-      <hr>
-   
-      <div class="footer">
-        <p>© Paquitosoft 2013</p>
-      </div>
+			</div>
 
-    </div>
+		</section>
 
 
         <!-- build:js scripts/main.js -->
-        <script src="components/mootools/mootools-core.1.4.5.js"></script>
+        <script src="components/mootools/mootools-core-1.4.5.js"></script>
+        <script src="scripts/mf-coverflow.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
