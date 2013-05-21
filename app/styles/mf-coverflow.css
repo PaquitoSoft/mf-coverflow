@@ -7,7 +7,7 @@
 }
 
 .mf-coverflow .hidden {
-	display: none;
+	opacity: 0;
 }
 
 .mf-coverflow .mf-list {
@@ -21,25 +21,18 @@
 	top: 0;
 }
 
-.mf-coverflow .active-cover .mf-cover {
-	left: 25%;
+.mf-coverflow .active-cover {
 	height: 175px;
 }
 
-.mf-coverflow .left-cover .mf-cover {
-	-webkit-transform: perspective( 600px ) rotateY( 45deg );
-	width: 45%;
-}
-
-.mf-coverflow .left-cover .mf-cover {
+.mf-coverflow .left-cover {
+	-webkit-transform: perspective(600px) rotateY(45deg);
 	left: 0;
 	opacity: 0.8;
 }
 
-.mf-coverflow .right-cover .mf-cover {
-	right: 0;
-	-webkit-transform: perspective( 600px ) rotateY( -45deg );
-	width: 45%;
+.mf-coverflow .right-cover {
+	-webkit-transform: perspective(600px)  rotateY(-45deg);
 	z-index: -10;
 	opacity: 0.8;
 }
