@@ -3,7 +3,7 @@
 	'use strict';
 
 	window.addEvent('domready', function() {
-		var moviesCoverflow = new MFCoverflow({
+		new MFCoverflow({
 			containerEl: 'movies-coverflow',
 			leftControl: '.left-arrow',
 			rightControl: '.right-arrow'
